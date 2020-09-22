@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>crud operation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .data
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 500px;
+            width: 80%;
+            background-color: chartreuse;
+            margin-left: 10%;
+            margin-top: 60px;
+            padding: 20px;
+            display: inline-block;
+        }
+        .table
+        {
+            width: 100%;
+            margin-top: 20px;
+        }
+        th,td{
+            height: 40px;
+            text-align: center;
+        }
+        .form
+        {
+            margin-top: 15px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="data">
+        <h1>Employee Information</h1>
+        <div class="form">
+            <input type="text" placeholder="search here" id="searchname" onkeyup="searchbyname()">
+        </div>
+        
+        <table border="4" class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Sr . no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tdata" id="tdata">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="question1.js"></script>
+</body>
+</html>
